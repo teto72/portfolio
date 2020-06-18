@@ -1,0 +1,52 @@
+.top
+  .top__nav
+    %li
+      Home
+    %li
+      Profile
+    %li
+      Portfolio
+    %li
+      Skill
+  .top__portfolio
+    Portfolio
+    .top__name
+      TSUBASA KITAGWA
+
+
+.profile
+  .profile__title
+    Profile
+  .profile__image
+    = image_tag src="profile.jpg"
+    .profile__box
+      .profile__box--set
+        .profile__box--name
+          Name:
+        .profile__box--text
+          北川　翼
+      .profile__box--set
+        .profile__box--name
+          Birthday:
+        .profile__box--text
+          1999年07月29日<br>
+          2020年6月時点（20歳）
+      .profile__box--set
+        .profile__box--name
+          Birthplace:
+        .profile__box--text
+          滋賀県<br>
+          現在、大阪府在住
+      .profile__box--set
+        .profile__box--name
+          Contact:
+        .profile__box--text
+          Email: tsubasa.k.729@gmail.com
+        .profile__box__icons
+          .profile__box__icons--github
+            = link_to "https://github.com/teto72" do
+              %i.fab.fa-github-square
+          .profile__box__icons--twitter
+            = link_to "https://twitter.com/tsubasa_shiga" do
+              %i.fab.fa-twitter-square
+
