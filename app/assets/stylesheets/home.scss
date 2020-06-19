@@ -1,6 +1,7 @@
+// トップ
 .top {
   background: linear-gradient(-45deg,#dd3502, #e7e7e7, #07a6e0, #bddad3);
-  width: 100%;
+  // width: 100%;
   height: 100vh;
   animation: gradient 5s ease infinite;
   &__nav {
@@ -35,8 +36,10 @@
 //   }
 }
 
+// プロフィール部
 .profile {
-  background-color: #eee;
+  // background-color: #eee;
+  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #aad9eb, #07a6e0);
   &__title {
     text-align: center;
     font-size: 40px;
@@ -64,7 +67,7 @@
       transition: all .3s ease 0s;
     }
     &--text:hover {
-      cursor: pointer;
+      cursor: zoom-in;
       font-size: 20px;
       color: red;
     }
@@ -95,3 +98,40 @@
     }
   }
 }
+
+.portfolio {
+  background-color: #eee;
+  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #aad9eb, #cbe5ee);
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &__box {
+    // height: 600px;
+    // background-color: burlywood;
+    // padding: 50px 200px;
+    display: flex;
+    overflow-x: scroll;
+    text-align: center;
+    scroll-snap-type: x mandatory;
+    &__app {
+      flex: none;
+      width: 60vw;
+      padding: 3vw;
+      scroll-snap-align: center;
+      &--text2 {
+        font-size: 40px;
+        padding-top: 200px;
+      }
+      img {
+        transition: box-shadow 1s ease-out, transform .7s ease-out;
+      }
+      img:hover {
+        box-shadow: 0 20px 30px 0px rgb(233, 153, 153);
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
+
