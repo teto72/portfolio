@@ -55,17 +55,17 @@
     Portfolio
   .portfolio__box
     .portfolio__box__app
-      = link_to "http://18.180.186.77/users/sign_in" do
-        = image_tag src="sample.png"
+      = link_to "http://175.41.197.104/" do
+        = image_tag src="myapp2.jpg"
       .portfolio__box__app--text
         -# アプリ名:ChatSpace<br>
 
     .portfolio__box__app
+      = link_to "http://18.180.186.77/users/sign_in" do
+        = image_tag src="sample.png"
+    .portfolio__box__app
       = link_to "http://54.168.222.33/" do
         = image_tag src="teamapp.jpg"
-    .portfolio__box__app
-      = link_to "http://175.41.197.104/" do
-        = image_tag src="myapp2.jpg"
 
     .portfolio__box__app
       = link_to "" do
@@ -73,4 +73,19 @@
       .portfolio__box__app--text2
         Coming Soon...
 
-    .portfolio__box--app
+
+.skill
+  .skill__title
+    Skill
+  .skill__frame
+    = image_tag src="sozai.png"
+    .skill__subtitle
+      学習言語
+    .skill__logos
+      = image_tag src="html-5.svg",size:"120x130"
+      = image_tag src="css-3.svg",size:"120x130"
+      = image_tag src="ruby.svg",size:"120x130"
+      = image_tag src="rails.svg",size:"120x130"
+      = image_tag src="javascript.svg",size:"120x130"
+      = image_tag src="aws.svg",size:"120x130"
+    

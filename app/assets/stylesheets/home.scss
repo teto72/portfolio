@@ -10,6 +10,7 @@
     position: fixed;
     top: 20px;
     right: 50px;
+    z-index: 999;
     li {
       margin-left: 20px;
     }
@@ -38,11 +39,10 @@
 
 // プロフィール部
 .profile {
-  // background-color: #eee;
   background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #aad9eb, #07a6e0);
   &__title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
   }
   &__image {
@@ -101,16 +101,13 @@
 
 .portfolio {
   background-color: #eee;
-  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #aad9eb, #cbe5ee);
+  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #fcfeff, #b5e2f1);
   &__title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
   }
   &__box {
-    // height: 600px;
-    // background-color: burlywood;
-    // padding: 50px 200px;
     display: flex;
     overflow-x: scroll;
     text-align: center;
@@ -135,3 +132,37 @@
   }
 }
 
+.skill {
+  height: 100vh;
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    font-weight: bold;
+  }
+  &__frame {
+    text-align: center;
+    position: relative;
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 80px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+  }
+  &__logos {
+    // background-color: #eee;
+    display: flex;
+    position: absolute;
+    top: 250px;
+    left: 280px;
+    img {
+      margin-left: 30px;
+    }
+  }
+}
