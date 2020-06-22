@@ -141,6 +141,8 @@
     font-weight: bold;
   }
   &__frame {
+    padding-bottom: 100px;
+    background-color: #eee;
     text-align: center;
     position: relative;
     img {
@@ -156,13 +158,33 @@
     left: 120px;
   }
   &__logos {
-    // background-color: #eee;
     display: flex;
-    position: absolute;
-    top: 250px;
-    left: 280px;
+    &--top {
+      display: flex;
+      position: absolute;
+      top: 150px;
+      left: 200px;
+    }
+    &--HTML5 {
+      position: absolute;
+      top: 180px;
+      left: 100px;
+      font-size: large;
+      font-weight: bold;
+      opacity: 0;
+    }
+    &--HTML5:hover {
+      opacity: 1;
+    }
+    &--under {
+      display: flex;
+      position: absolute;
+      top: 400px;
+      left: 200px;
+    }
     img {
-      margin-left: 30px;
+      margin-left: 70px;
+      // margin-bottom: 100px;
     }
   }
 }

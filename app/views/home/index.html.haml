@@ -80,12 +80,19 @@
   .skill__frame
     = image_tag src="sozai.png"
     .skill__subtitle
-      学習言語
+      学習言語・スキル
     .skill__logos
-      = image_tag src="html-5.svg",size:"120x130"
-      = image_tag src="css-3.svg",size:"120x130"
-      = image_tag src="ruby.svg",size:"120x130"
-      = image_tag src="rails.svg",size:"120x130"
-      = image_tag src="javascript.svg",size:"120x130"
-      = image_tag src="aws.svg",size:"120x130"
+      .skill__logos--top
+        .skill__logos--HTML5
+          HTML5
+        = image_tag src="html-5.svg",size:"120x130" 
+        = image_tag src="css-3.svg",size:"120x130" 
+        = image_tag src="ruby.svg",size:"120x130"
+        = image_tag src="rails.svg",size:"120x130"
+        = image_tag src="javascript.svg",size:"120x130"
+      .skill__logos--under
+        = image_tag src="aws.svg",size:"120x130"
+        = image_tag src="haml.svg",size:"120x130"
+        = image_tag src="sass.svg",size:"120x130"
+        = image_tag src="docker-icon.svg",size:"120x130"
     
