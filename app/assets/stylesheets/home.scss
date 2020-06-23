@@ -1,7 +1,6 @@
 // トップ
 .top {
   background: linear-gradient(-45deg,#dd3502, #e7e7e7, #07a6e0, #bddad3);
-  // width: 100%;
   height: 100vh;
   animation: gradient 5s ease infinite;
   &__nav {
@@ -99,6 +98,7 @@
   }
 }
 
+// ポートフォリオ部
 .portfolio {
   background-color: #eee;
   background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #fcfeff, #b5e2f1);
@@ -131,7 +131,7 @@
     }
   }
 }
-
+// スキル詳細部
 .skill {
   height: 100vh;
   &__title {
@@ -163,28 +163,32 @@
       display: flex;
       position: absolute;
       top: 150px;
-      left: 200px;
+      left: 160px;
+      list-style: none;
     }
-    &--HTML5 {
+    &--topname {
       position: absolute;
       top: 180px;
-      left: 100px;
+      margin-left: 100px;
       font-size: large;
       font-weight: bold;
-      opacity: 0;
-    }
-    &--HTML5:hover {
-      opacity: 1;
     }
     &--under {
       display: flex;
       position: absolute;
-      top: 400px;
-      left: 200px;
+      top: 450px;
+      left: 160px;
+      list-style: none;
+    }
+    &--undername {
+      position: absolute;
+      top: 180px;
+      margin-left: 100px;
+      font-size: large;
+      font-weight: bold;
     }
     img {
       margin-left: 70px;
-      // margin-bottom: 100px;
     }
   }
 }
