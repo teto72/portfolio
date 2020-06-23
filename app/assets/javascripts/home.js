@@ -1,17 +1,15 @@
-// $(function(){
-//   function animation(){
-//     $('.fadein').each(function(){
-//       const target = $(this).offset().top;
-//       const scroll = $(window).scrollTop();
-//       const windowHeight = $(window).height();
-//       if (scroll > target - windowHeight) {
-//         $(this).css('opacity','1');
-//         $(this).css('transform','translateY(0)');
-//       }
-//     });
-//   }
-//   animation();
-//   $(window).scroll(function(){
-//     animation();
-//   });
-// });
+$(function(){
+  $('a[href^="#"]').click(function(){
+    //スクロールのスピード
+    let speed = 2000;
+    //リンク元を取得
+    let href= $(this).attr("href");
+    //リンク先を取得
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    //リンク先までの距離を取得
+    let position = target.offset().top;
+    //スムーススクロール
+    $("html, body").animate({scrollTop:position}, speed, "slow");
+    return false;
+  });
+});

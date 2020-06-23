@@ -1,22 +1,21 @@
 .top
-  .top__nav
+  %ul.top__nav
     %li
-      Home
+      %a{:href => "#section01"} Top
     %li
-      Profile
+      %a{:href => "#section02"} Profile
     %li
-      Portfolio
+      %a{:href => "#section03"} Portfolio
     %li
-      Skill
+      %a{:href => "#section04"} Skill
   .top__portfolio
     Portfolio
     .top__name
       TSUBASA KITAGAWA
 
-
 .profile
   .profile__title
-    Profile
+    %section#section02 Profile
   .profile__image
     = image_tag src="profile.jpg"
     .profile__box
@@ -52,7 +51,7 @@
 
 .portfolio
   .portfolio__title
-    Portfolio
+    %section#section03 Portfolio
   .portfolio__box
     .portfolio__box__app
       = link_to "http://175.41.197.104/" do
@@ -76,7 +75,7 @@
 
 .skill
   .skill__title
-    Skill
+    %section#section04 Skill
   .skill__frame
     = image_tag src="sozai.png"
     .skill__subtitle
