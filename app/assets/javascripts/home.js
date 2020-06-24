@@ -1,7 +1,7 @@
 $(function(){
   $('a[href^="#"]').click(function(){
     //スクロールのスピード
-    let speed = 2000;
+    let speed = 500;
     //リンク元を取得
     let href= $(this).attr("href");
     //リンク先を取得
@@ -14,20 +14,3 @@ $(function(){
   });
 });
 
-// 'use strict';
-// {
-//   const open = document.getElementById('open');
-//   const modal = document.getElementById('modal');
-//   const mask = document.getElementById('mask');
-
-//   open.addEventListener('click', function(){
-//     modal.classList.remove('hidden');
-//     mask.classList.remove('hidden');
-//   });
-// }
-
-$(function(){
-  $('#open').click(function(){
-    
-  })
-})
