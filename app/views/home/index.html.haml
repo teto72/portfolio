@@ -56,15 +56,22 @@
     .portfolio__box__app
       = link_to "http://175.41.197.104/" do
         = image_tag src="myapp2.jpg"
-      .portfolio__box__app--text
-        -# アプリ名:ChatSpace<br>
-
+      #open 詳細
+      #mask.hidden
+      %section#modal.hidden
+        %p
+          タイトル：MotoUp<br>
+          aaaaaaaaaaaaaaaaaaaaaaaaa<br>
+          aaaaaaaaaaaaaaaaaa
     .portfolio__box__app
       = link_to "http://18.180.186.77/users/sign_in" do
         = image_tag src="sample.png"
+      %button 詳細
+
     .portfolio__box__app
       = link_to "http://54.168.222.33/" do
         = image_tag src="teamapp.jpg"
+      %button 詳細
 
     .portfolio__box__app
       = link_to "" do
