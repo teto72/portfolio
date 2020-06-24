@@ -56,13 +56,28 @@
     .portfolio__box__app
       = link_to "http://175.41.197.104/" do
         = image_tag src="myapp2.jpg"
-      #open 詳細
-      #mask.hidden
-      %section#modal.hidden
-        %p
-          タイトル：MotoUp<br>
-          aaaaaaaaaaaaaaaaaaaaaaaaa<br>
-          aaaaaaaaaaaaaaaaaa
+      -# #open 詳細
+      -# #mask.hidden
+      -# %section#modal.hidden
+      -# %a#modal-open{:href => ""} 詳細
+      -# .modal 
+      -#   .modal__bg
+      -#   .modal__content
+      -#     %p
+      -#       タイトル：MotoUp<br>
+      -#       aaaaaaaaaaaaaaaaaaaaaaaaa<br>
+      -#       aaaaaaaaaaaaaaaaaa
+      -#     %a.modal-close{:href => ""} 閉じる
+      %button#openModal open
+      %section#modalArea.modalArea
+        #modalBg.modalBG
+        .modalWrapper
+        .modalContents
+          %p
+            aaaaaaaaaaaaaa<br>
+            wwwwwwwwwwww<br>
+            wwwww
+          #closeModal.closeModal ❌
     .portfolio__box__app
       = link_to "http://18.180.186.77/users/sign_in" do
         = image_tag src="sample.png"
