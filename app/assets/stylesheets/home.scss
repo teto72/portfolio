@@ -115,12 +115,9 @@
         font-size: 40px;
         padding-top: 200px;
       }
-      // button {
-      //   margin-top: 20px;
-      //   width: 100px;
-      //   cursor: pointer;
-      //   box-shadow: 0 5px 10px rgb(110, 110, 110);
-      // }
+      span {
+        color: red;
+      }
       img {
         transition: box-shadow 1s ease-out, transform .7s ease-out;
       }

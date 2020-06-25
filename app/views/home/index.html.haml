@@ -56,14 +56,29 @@
     .portfolio__box__app
       = link_to "http://175.41.197.104/" do
         = image_tag src="myapp2.jpg"
-    .portfolio__box__app
-      = link_to "http://18.180.186.77/users/sign_in" do
-        = image_tag src="sample.png"
+      .portfolio__box--text
+        タイトル：MotoUp（個人アプリ）<br>
+        テストユーザー = 
+        %span email:motoup@gmail.com<br> 
+        %span pass:123456
+    -# .portfolio__box__app
+    -#   = link_to "http://18.180.186.77/users/sign_in" do
+    -#     = image_tag src="sample.png"
+    -#   .portfolio__box--text
+    -#     タイトル：ChatSpace(スクール、カリキュラム課題)<br>
+    -#     テストユーザー =
+    -#     %span email:gest@gmail.com<br>
+    -#     %span pass:11111111
 
     .portfolio__box__app
       = link_to "http://54.168.222.33/" do
         = image_tag src="teamapp.jpg"
-
+      .portfolio__box--text
+        タイトル：フリマアプリ（スクール、アジャイル開発）<br>
+        %span basic認証:user: freemarket75e<br>pass: freemarket75epass<br>
+        テストユーザー =
+        %span email:furimataro@gmail.com<br> pass:furimataro75
+        
     .portfolio__box__app
       = link_to "" do
         = image_tag src=""
