@@ -1,0 +1,191 @@
+// トップ
+.top {
+  background: linear-gradient(-45deg,#dd3502, #e7e7e7, #07a6e0, #bddad3);
+  height: 100vh;
+  &__nav {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 999;
+    li {
+      margin-left: 20px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  &__portfolio {
+    text-align: center;
+    font-size: 100px;
+    padding: 200px 0;
+  }
+  &__name {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+
+// プロフィール部
+.profile {
+  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #aad9eb, #07a6e0);
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &__image {
+    display: flex;
+    padding: 50px 200px;
+    img {
+      box-shadow: 0 22px 20px 10px rgb(189, 187, 187);
+    }
+  }
+  &__box {
+    margin-left: 30px;
+    &--set {
+      margin-top: 20px;
+    }
+    &--name {
+      font-size: large;
+      font-weight: bold;
+    }
+    &--text {
+      display: inline-block;
+      margin-left: 15px;
+      transition: all .3s ease 0s;
+    }
+    &--text:hover {
+      cursor: zoom-in;
+      font-size: 20px;
+      color: red;
+    }
+    &__icons {
+      font-size: 50px;
+      display: flex;
+      &--github {
+        color: black;
+        margin-left: 20px;
+        i {
+          color: black;
+        }
+        i:hover {
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      }
+      &--twitter {
+        margin-left: 20px;
+        i {
+          color: #07a6e0;
+        }
+        i:hover {
+          opacity: 0.5;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+// ポートフォリオ部
+.portfolio {
+  background-color: #eee;
+  background: linear-gradient(-45deg,#ffffff,#f9fafa, #ffffff, #fcfeff, #b5e2f1);
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &__box {
+    display: flex;
+    overflow-x: scroll;
+    text-align: center;
+    scroll-snap-type: x mandatory;
+    &__app {
+      position: relative;
+      flex: none;
+      width: 60vw;
+      padding: 3vw;
+      scroll-snap-align: center;
+      &--text2 {
+        font-size: 40px;
+        padding-top: 200px;
+      }
+      span {
+        color: red;
+      }
+      img {
+        transition: box-shadow 1s ease-out, transform .7s ease-out;
+      }
+      img:hover {
+        box-shadow: 0 20px 30px 0px rgb(233, 153, 153);
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
+// スキル詳細部
+.skill {
+  height: 100vh;
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    font-weight: bold;
+  }
+  &__frame {
+    padding-bottom: 100px;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 80px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+  }
+  &__logos {
+    display: flex;
+    &--top {
+      display: flex;
+      position: absolute;
+      top: 150px;
+      left: 160px;
+      list-style: none;
+    }
+    &--topname {
+      position: absolute;
+      top: 180px;
+      margin-left: 100px;
+      font-size: large;
+      font-weight: bold;
+    }
+    &--under {
+      display: flex;
+      position: absolute;
+      top: 450px;
+      left: 160px;
+      list-style: none;
+    }
+    &--undername {
+      position: absolute;
+      top: 180px;
+      margin-left: 100px;
+      font-size: large;
+      font-weight: bold;
+    }
+    img {
+      margin-left: 70px;
+    }
+  }
+}
