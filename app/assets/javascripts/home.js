@@ -3,7 +3,7 @@ $(function(){
     //スクロールのスピード
     // let speed = 500;
     //リンク元を取得
-    let href= $(this).attr("href");
+    // let href= $(this).attr("href");
     //リンク先を取得
     let target = $(href == "#" || href == "" ? 'html' : href);
     //リンク先までの距離を取得
